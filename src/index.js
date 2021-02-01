@@ -113,6 +113,8 @@ module.exports = function transform (src, options) {
       getFunctional(path, fileContent, result, 'arrow')
     }
   })
+  console.log('fileContent', fileContent)
+
   // check props validation
   if (!Object.keys(result.propTypes).length && /props/.test(fileContent)) {
     result.caveats.push(`There is no props validation, please check it manually`)
@@ -125,7 +127,7 @@ module.exports = function transform (src, options) {
   
   // output caveats
   if (result.caveats.length) {
-    console.log(chalk.red("Caveats:"));
+    console.log(chalk.red("Caveats:1111111"));
     console.log(chalk.red(result.caveats.join('\n')))
   }
 }

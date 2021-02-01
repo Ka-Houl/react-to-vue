@@ -6,6 +6,7 @@
     "prepublish": "npm run start",
     "start": "babel ./src/ -d ./lib/",
     "dev": "babel ./src/ -d ./lib/ -w",
+    "build": "node ./bin/rtv ./TableBox/index.jsx -o test.vue",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
